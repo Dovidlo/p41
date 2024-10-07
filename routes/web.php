@@ -15,10 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', function () {return view('welcome');});
 
 Route::get('/first', [MainController::class, 'show'])->name('first');
 
 Route::get('/students', [StudentController::class, 'index'])->name('student-idnex');
+
+Route::get('/array', [MainController::class, 'showArray'])->name('array');
