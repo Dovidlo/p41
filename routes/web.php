@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\ReportController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,3 +23,5 @@ Route::get('/first', [MainController::class, 'show'])->name('first');
 Route::get('/students', [StudentController::class, 'index'])->name('student-idnex');
 
 Route::get('/array', [MainController::class, 'showArray'])->name('array');
+
+Route::get('/reports', [ReportController::class, 'index'])->name('reports.index');
