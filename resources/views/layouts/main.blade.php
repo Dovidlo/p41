@@ -6,16 +6,16 @@
     <title>Document</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body>
-    <header>
+<body class="main-body">
+    <header class="main-header">
         Нарушений.нет
     </header>
 
-    <main>
+    <main class="main-main">
         @yield('content')
     </main>
 
-    <footer>
+    <footer class="main-footer">
         © Хайруллин Давид Сухробович 2024г
     </footer>
 </body>
