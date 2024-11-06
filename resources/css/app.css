@@ -96,3 +96,42 @@
 .reports-card-block-p{
     padding-bottom: 18px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.formAdd{
+    background-color: blueviolet;
+    margin-top: 90px;
+    padding: 20px;
+}
+
+.formAddBox_el{
+    display: flex;
+}
+
+
+.formAddBox_el_inp{
+    font-size: 20px;
+    padding-right: 10px;
+    margin-bottom: 16px;
+}
+
+.formAdd_bt{
+    padding: 5px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}

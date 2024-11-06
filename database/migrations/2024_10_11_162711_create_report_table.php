@@ -15,7 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('number');
             $table->text('description');
-            $table->created_at();
+            $table->timestamp('created_at');
+            $table->timestamp('updated_at')->useCurrent()->onUpdate('current_timestamp'); 
+            $table->softDeletes('deleted_at');
         });
     }
 
