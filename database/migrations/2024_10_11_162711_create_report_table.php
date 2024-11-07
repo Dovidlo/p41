@@ -18,6 +18,16 @@ return new class extends Migration
             $table->timestamp('created_at');
             $table->timestamp('updated_at')->useCurrent()->onUpdate('current_timestamp'); 
             $table->softDeletes('deleted_at');
+            $table->foreignId('status_id')
+            ->nullable()
+            ->constrained()
+            ->cascadeOnUpdate()
+            ->nullOnDelete(); 
+            $table->foreignId('user_id')
+            ->nullable()
+            ->constrained()
+            ->cascadeOnUpdate()
+            ->nullOnDelete();
         });
     }
 
