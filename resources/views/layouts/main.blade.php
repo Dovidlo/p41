@@ -8,11 +8,17 @@
 </head>
 <body class="main-body">
     <header class="main-header">
-        Нарушений.нет
+        <div class="main-header-container">
+            Нарушений<span class="main-header-c">.нет</span>
+        </div>
+        
     </header>
 
     <main class="main-main">
-        @yield('content')
+        <div class="main-main-container">
+            @yield('content')
+        </div>
+        
     </main>
 
     <footer class="main-footer">

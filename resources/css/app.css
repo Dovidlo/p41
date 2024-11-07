@@ -24,27 +24,46 @@
 /* MAIN BLADE #############################################################################################################################*/
 .main-body {
     width: 100%;
-    max-width: 1200px;
+    
     margin: 0 auto;
     font-family: sans-serif;
+    background-color: #DDE8FF;
 }
 
 .main-header {
     display: flex;
     align-items: center;
-    padding: 24px;
     height: 80px;
-    background-color: rgb(237, 100, 100);
+    background-color: #ffffff;
+    width: 100%;
+    justify-content: center;
 
     font-weight: 700;
     font-size: 24px;
     text-transform: uppercase;
-    color: rgb(44, 44, 44);
+    color: #051AFF;
 }
 
+.main-header-c{
+    color: #FF0000;
+}
+
+.main-header-container{
+    width: 100%;
+    max-width: 1200px;
+}
 
 .main-main{
     margin-top: 90px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+
+}
+.main-main-container{
+    width: 100%;
+    max-width: 1200px;
 }
 
 .main-footer {
@@ -54,10 +73,9 @@
     position: fixed;
     bottom: 0;
     left: auto;
-    background-color: rgb(237, 100, 100);
+    background-color: rgb(255, 255, 255);
     width: 100%;
-    max-width: 1200px;
-    height: 80px;
+    height: 20px;
 
     font-weight: 700;
     font-size: 18px;
@@ -82,22 +100,28 @@
 .reports-card {
     display: flex;
     flex-direction: column;
-    border-radius: 8px;
+    border-radius: 20px;
     padding-top: 16px;
     padding-bottom: 16px;
-    padding-left: 24px;
-    background-color: aquamarine;
+    padding-left: 20px;
+    background-color: rgb(255, 255, 255);
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 20px;
+    font-size: 16px;
     height: auto;
-}
-
-.reports-card-block-p{
-    padding-bottom: 18px;
+    flex-direction: row;
 }
 
 
+.data{
+    color:#FF0000;
+    font-weight: bold;
+}
+
+.number{
+    color: black;
+    font-weight: 700;
+}
 
 
 
